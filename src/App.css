@@ -24,6 +24,11 @@
   color: white;
 }
 
+.ad-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +40,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* 모바일에 대한 스타일 */
+@media (max-width: 768px) {
+  /* 모바일 전용 스타일 */
+}
+
+/* 데스크톱에 대한 스타일 */
+@media (min-width: 769px) {
+  /* 데스크톱 전용 스타일 */
+}
+
+.issue-detail-content {
+  display: flex;
+  align-items: center;
+}
+
+.issue-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center; 
+}
+
+.comment {
+  justify-self: end;
 }
